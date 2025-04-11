@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Document</title>
   <style>
+    *{
+      scroll-behavior: smooth
+    }
     @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Fugaz+One&display=swap');
     body {
       margin: 0;
@@ -61,7 +64,7 @@
       text-align: justify;
       opacity: 0;
       animation: fadeInDesc 1s ease forwards;
-      animation-delay: 5s;
+      animation-delay: 3s;
     }
 
     @keyframes fadeInDesc {
@@ -73,7 +76,7 @@
       width: 0;
       background-color: white;
       animation: growLineHorizontal 1s ease-out forwards;
-      animation-delay: 3s;
+      animation-delay: 2s;
     }
 
     .vertical {
@@ -84,7 +87,7 @@
       height: 0;
       background-color: white;
       animation: growLineVertical 0.6s ease-out forwards;
-      animation-delay: 4s;
+      animation-delay: 3s;
     }
 
     .line-container {
@@ -139,8 +142,10 @@
       display: flex;
       flex-direction: column;
       min-height: 200px;
-      color: white;
       margin-left: 100px;
+    }
+    #middleflex h3:hover {
+      color: #ffffff94;
     }
 
     #charactersheet {
@@ -186,7 +191,7 @@
       padding: 15px;
       min-height: 100px;
       width: 300px;
-      border: 2px solid white;
+      border: 1px solid white;
       color: #ffffffaa;
     }
     #mickeypic{
@@ -216,7 +221,40 @@
     #nashapic{
       background-color: red;
     }
-   
+  #villaindesc{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 170px;
+
+  }
+  .villain{
+  background-color: aqua;
+  width: 350px;
+  height: 380px;
+  }
+  #villaindesc p{
+  background-color: black;
+  margin-top: 300px;
+  padding: 0;
+  }
+  #thoughts{
+    width: 70%;
+    min-height: 150px;
+    margin: auto;
+    display: block;   
+    line-height: 1.7;
+    margin-bottom: 100px;
+  }
+  h3 a{
+    color: white;
+    text-decoration: none
+  }
+  h3 a:hover{
+    color: #ffffffb1;
+  }
+  
     
   </style>
 </head>
@@ -254,9 +292,9 @@
         </div>
 
         <div id="middleflex">
-          <h3><a href="#charactersheet" style="color: white; text-decoration: none;">characters</a></h3>
-          <h3 style="color: #ffffff8b;">thoughts</h3>
-          <h3><a href="shrines.html" style="color: white; text-decoration: none;">shrine page</a></h3>
+          <h3><a href="#charactersheet"  >characters</a></h3>
+          <h3><a href="#thoughts" >thoughts</a></h3>
+          <h3><a href="shrines.html" >shrine page</a></h3>
         </div>
 
         <div id="charactersheet">
@@ -298,6 +336,23 @@
                 The cutest alien species on Niflheim, passive if not attacked. 
               </p>
             </div>
+          </section>
+
+          <section id="villaindesc">
+            <div id="markruff" class="villain">
+              <div id="markpic"></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum sapiente, sequi maiores libero nostrum.</p>
+            </div>
+
+            <div id="otherlady" class="villain">
+              <div id="ladypic" ></div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quisquam soluta, dolorum sunt sed nulla.</p>
+            </div>
+          </section>
+
+          <section id="thoughts">
+            <h3>THOUGHTS</h3>
+            <p>I love sci-fi so much and honestly this movie was a great addition to that! It's a very interesting concept and it made me want to read the book it's based off of, maybe one day when I have time. The messege in this movie is very clear/in your face about it, which I don't mind. Robert Pattingson has crazy vocal range and dare I say <i>a good actor.</i> Everyone did so well in this movie tbh, Mark Ruffalo was a pleasant surprise despite the character he played. The Niflheim scenery was sooo pretty and I loved the space and spaceship shots. Creepers were so cute...overall great movie. Freaky, but still a great movie. </p>
           </section>
 
         </div>
