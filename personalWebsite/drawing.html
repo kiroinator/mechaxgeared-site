@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Art</title>
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="picstyle.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: #0E0D0D;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            transform: scale(.9);
+
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        #container{
+            background-color: #23292F;
+            border: 2px solid #23292F;
+            max-width: 880px;
+            height: 600px;
+            margin: auto;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        #nav-flex{
+            display: flex;
+            flex-direction: row;
+        }
+        #artintro{
+            max-width:25%;
+            overflow-x: auto;
+            height: 580px;
+        }
+        #webicon{
+            background-image: url(drawingImages/icon.png); 
+            background-size: cover;  
+            width: 190px;
+            height: 100px;
+            margin: auto;
+            margin-top: 20px;
+            scale: 1.2;
+            transition: .5s;
+        }
+        #webicon:hover{
+            scale: 1.25; 
+        }
+        #artintro p,h3{
+            text-align: center;
+            padding: 5px;
+        }
+        #statspic{
+            background-image: url(drawingImages/stats.png);   
+            background-size: cover;         
+            height: 200px;
+            width: 95%;
+            margin: auto;
+        }
+        #artintro a p, #artintro p a{
+            text-decoration: none;
+            color: #A5B9C3;
+        }
+        a p:hover, p a:hover{
+            color:white;
+        }
+        #artintro p{
+            font-family: "Jomolhari", serif;
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: #A5B9C3;
+            width: 85%;
+            margin: auto;
+            text-align: justify;
+        }
+        h3,h1,h2{
+            font-family: "Jockey One", serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #489FB5;
+
+        }
+    /* content */
+        #content p{
+            font-family: "Jomolhari", serif;
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: #A5B9C3;
+        }
+        #content{
+            max-width: 55%;
+            padding: 7px;
+            overflow-x: auto;
+            height: 580px;
+        }
+        #art-content{
+            display: flex;
+            flex-direction: row;   
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 8px;
+
+        }
+        .artpics{
+            background-color: none;
+            width: 150px;
+            height: 160px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: .5s;
+
+        }
+        .artpics:hover{
+            scale: 1.05;
+
+        }
+        #descspace{
+            display: flex;
+        }
+        #picdesc{
+            width: 25%;
+        }
+        hr{
+            border-color: #489FB5;
+            margin-right: 10px;
+        }
+        /* nav */
+
+        #rightnav{
+            padding: 10px;
+            width: 20%;
+        }
+        #rightnav h2, #rightnav a p{
+            margin-bottom: 10;
+
+
+        }
+        #rightnav h2{
+            color: white;
+        }
+        #rightnav a p{
+            color: #A5B9C3;
+        }
+        #rightnav a p:hover{
+            color: white;
+        }
+        #rightnav p{
+            color: #489FB5;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <div id="wrapper"></div>
+    <div id="container">
+        <div id="nav-flex">
+            <div id="artintro">
+                <a href="index.html"><div id="webicon"></div></a>
+                <p class="navtext">Welcome to my art gallery! I’ve been drawing for over ten years, but this is mostly an archive for my digital art (~2015-present) I try for this section to be neat and organized but...idk man</p>
+                <h3>My Stats</h3>
+                <div id="statspic"></div>
+                <h3>My Art Socials</h3>
+                <a href=""><p>bluesky | not too active</p></a>
+                <a href=""><p>instagram | active</p></a>
+                <a href=""><p>tumblr | active</p></a>
+            </div>
+            <div id="content">
+                <h1>CHARACTER DESIGN | PORTFOLIO</h1>
+                <section id="art-content">
+                    <a href="drawingImages/art1.jpg"><div id="pic1" class="artpics"></div></a>
+                    <div id="pic2" class="artpics"></div>
+                    <div id="pic3" class="artpics"></div>
+                </section>
+                <section  id="descspace">
+                    <p id="picdesc">Here are my latest character designs, one of the secondary antagonists to my story.  </p>
+                    <hr>
+                    <p id="picdesc">I experimented with a new shading/rendering style here, really liked the result.</p>
+                    <hr>
+                    <p id="picdesc">If you're curious, there's more info about this character <a href="index.html">here</a> </p>
+                </section>
+
+                <h2 id="ocart">MISC ORIGNAL CHARACTER ART</h2>
+                <section id="art-content">
+                    <a href="drawingImages/pinkguy.jpg"><div id="pic4" class="artpics"></div></a>
+                    <a href="drawingImages/art5.jpg"><div id="pic5" class="artpics"></div></a>
+                    <a href="drawingImages/art6.jpg"><div id="pic6" class="artpics"></div></a>
+                    
+                </section>
+                <section id="descspace">
+                    <p id="picdesc">Pink guy redraw. I drew over a older drawing of this guy to fix the proportions and colors.</p>
+                    <hr>
+                    <p id="picdesc">Scalene! I tried doing pixel art this time around and realy enjoyed it.</p>
+                    <hr>
+                    <p id="picdesc">Scalene's brother i think, not canon. Did it on the same canvas as te previous one.</p>
+                </section>
+
+                <h2 id="transformers">TRANSFORMERS</h2>
+                <section id="art-content">
+                    <a href="drawingImages/art7.jpg"><div id="pic7" class="artpics"></div></a>
+                    <a href="drawingImages/art8.jpg"><div id="pic8" class="artpics"></div></a>
+                    <a href="drawingImages/art9.jpg"><div id="pic9" class="artpics"></div></a>
+                </section>
+                <section id="descspace">
+                    <p id="picdesc">Starscream. Filler text because my site will break if i don't :3</p>
+                    <hr>
+                    <p id="picdesc">Another starscream, drawn on the same day. A million color filters on it.  </p>
+                    <hr>
+                    <p id="picdesc">A commission I did for a transformer OC! (not my character)</p>
+                </section>
+                <section id="art-content">
+                    <a href="drawingImages/art10.jpg"><div id="pic10" class="artpics"></div></a>
+                    <a href="drawingImages/art11.jpg"><div id="pic11" class="artpics"></div></a>
+                    <a href="drawingImages/art12.jpg"><div id="pic12" class="artpics"></div></a>
+                </section>
+                <section id="descspace">
+                    <p id="picdesc">Reference sheet of my own transformers character/OC. Downfall! :3</p>
+                    <hr>
+                    <p id="picdesc">Another ref sheet, MotorRaid. Garbage truck guy</p>
+                    <hr>
+                    <p id="picdesc">And a third, this one is okay. A-Strike.</p>
+                </section>
+
+                <section id="art-content">
+                    <a href="drawingImages/art13.jpg"><div id="pic13" class="artpics"></div></a>
+                    <a href="drawingImages/art14.jpg"><div id="pic14" class="artpics"></div></a>
+                    <a href="drawingImages/art15.jpg"><div id="pic15" class="artpics"></div></a>
+                </section>
+                <section id="descspace">
+                    <p id="picdesc">technically this is tf art...humanformers is real. </p>
+                    <hr>
+                    <p id="picdesc">i drew this after TF-One came out and i really liked it. the most effects ive plastered on a drawing.</p>
+                    <hr>
+                    <p id="picdesc"></p>
+                </section>
+
+
+                <h2 id="creep">CREEPYPASTA/HORROR</h2>
+                <section id="art-content">
+                    <a href="drawingImages/crep1.jpg"><div id="crep1" class="artpics"></div></a>
+                    <a href="drawingImages/"><div id="crep2" class="artpics"></div></a>
+                    <a href="drawingImages/"><div id="crep3" class="artpics"></div></a>
+                </section>
+                <section id="descspace">
+                    <p id="picdesc">I started getting back into creepypasta and drew my second favorite all time character. yayy</p>
+                    <hr>
+                    <p id="picdesc"></p>
+                    <hr>
+                    <p id="picdesc"></p>
+                </section>
+
+
+                <h2 id="fanart">MISC FANART</h2>
+                <section id="art-content">
+                    <a href="drawingImages/art16.jpg"><div id="pic16" class="artpics"></div></a>
+                    <a href="drawingImages/"><div id="" class="artpics"></div></a>
+                    <a href="drawingImages/"><div id="" class="artpics"></div></a>
+                </section>
+                <section id="descspace">
+                    <p id="picdesc">MOUTHWASHING FANART! Anya for those who don't knwo..</p>
+                    <hr>
+                    <p id="picdesc"></p>
+                    <hr>
+                    <p id="picdesc"></p>
+                </section>
+            </div>
+            <div id="rightnav">
+                <h2 id="nav">NAVIGATION</h2>
+                <p id="navsections"><p>Sort by: Topic</p></p>
+                <a href="drawing.html" class="navlinks"><p>design portfolio (home)</p></a>
+                <a href="#ocart" class="navlinks"><p>misc original character art</p></a>
+                <a href="#transformers" class="navlinks"><p>transformers</p></a>
+                <a href="#trad" class="navlinks"><p>traditional</p></a>
+                <a href="#fanart" class="navlinks"><p>misc fanart</p></a>
+                <p id="navsections"><p>Sort by: Year</p></p>
+                <a href="" class="navlinks"><p>2025</p></a>
+                <a href="" class="navlinks"><p>2024</p></a>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

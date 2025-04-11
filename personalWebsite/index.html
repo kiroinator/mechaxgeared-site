@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div id="title">
+                <img src="Images/mainicon.png" id="titleimage">
+            </div>
+            <img src="Images/border.png" id="divider">
+            <div id="in-container">
+                <div id="nav">
+                    <h2>Home Page</h2>
+                    <ul>
+                        <li><a href="#nav h2" id="home-page">
+                            <img src="Images/icon.png" alt="" id="navicon1">
+                            home page
+                        </a></li>
+                        <li><a href=" " id="update-log">
+                            <img src="Images/icon.png" alt="" id="navicon1">
+                            update log
+                        </a></li>
+                    </ul>
+                    <h2>My Media</h2>
+                    <ul>
+                        <li><a href="drawing.html">
+                            <img src="Images/icon.png" alt="" id="navicon1">
+                            drawing
+                        </a></li>
+                        <li><a href="error.html">
+                            <img src="Images/icon.png" alt="" id="navicon1">
+                            writing
+                        </a></li>
+                        <li><a href="cooking.html">
+                            <img src="Images/icon.png" alt="" id="navicon1">
+                            cooking
+                        </a></li>
+                    </ul>
+                    <h2>Interests</h2>
+                    <ul>
+                        <li><a href="shrines.html">
+                            <img src="Images/icon.png" alt="" id="navicon1">
+                            Shrines
+                        </a></li>
+                    </ul>
+                </div>
+                <div id="content">
+                    <img src="Images/bdivider.png" alt="" id="b-divider">
+                    <h1>WELCOME TO MY SITE!</h1>
+                    <div id="contentwrap">
+                        <div id="morewrap">
+                            <p>Hello!! ^_^ I'm Kas and this is my site. This site is heavily under construction !</p>
+                            <img src="Images/constu.gif" id="const">
+                            <p>Feel free to look around and explore
+                                <ul>
+                                    This site is... 
+                                    <li>not responsive</li>
+                                    <li>preferably to-be viewed on desktop</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div id="mainicon"></div>
+                    </div>
+
+                    <img src="Images/bdivider.png" alt="" id="b-divider">
+                    <img src="Images/blinkie1.webp" alt="" id="blinkie1">
+                    <img src="Images/blinkie2.webp" alt="" id="blinkie1">
+                    <img src="Images/blinkie3.gif" alt="" id="blinkie1">
+                    <img src="Images/blinkie4.webp" alt="" id="blinkie1">
+                    <img src="Images/blinkie5.jpg" alt="" id="blinkie1">
+                    <img src="Images/blinkie6.webp" alt="" id="blinkie2">
+                    <img src="Images/blinkie7.webp" alt="" id="blinkie2">
+                    <img src="Images/blinkie9.webp" alt="" id="blinkie2">
+                    <img src="Images/stamp 1.png" alt="" id="blinkie1">
+                    <img src="Images/blinkie8.webp" alt="" id="blinkie1">
+                    <img src="Images/blinkie10.webp" alt="" id="blinkie2">
+                    <img src="Images/blinkie11.png" alt="" id="blinkie1">
+                    <img src="Images/blinkie12.webp" alt="" id="blinkie1">
+                    <img src="Images/blinkie13.webp" alt="" id="blinkie1">
+                    <img src="Images/blinkie14.webp" alt="" id="blinkie1">
+                    <img src="Images/blinkie15.webp" alt="" id="blinkie1">
+                    <img src="Images/blinkie16.gif" alt="" id="blinkie2">
+                </div>
+                <div id="right-content">
+                    <div id="music-player">
+                        <img src="Images/musicplayer.png" id="stereo-img"> <!-- Your stereo image -->
+    
+    <div id="player-controls">
+        <button id="prev-song">⏮️</button>
+        <button id="play-pause">▶️</button>
+        <button id="next-song">⏭️</button>
+    </div>
+
+    <p id="current-song">Now Playing: None</p>
+                    </div>
+                    <div id="status">
+                        <div id="status-bar">
+                            <img src="Images/greystar.png" alt="" id="status-star">
+                            <h2 id="status">Status</h2>
+                        </div>
+                        <p id="statusp">Feeling...<u><i>*blows up*</i></u></p>
+                        <p id="statusp">Thinking...<u><i>I love videogames again.</i></u></p>
+                        <p class="lastupdated">last updated : 04.02.2025</p>
+                    </div>
+                    <div id="social-media">
+                        <h2 id="social-m">
+                            <img src="Images/bluestar.png" id="socialicon">
+                            Social Media
+                        </h2>
+                        <div id="socialm-wrapper">
+                            <div id="socialm1"></div>
+                            <div id="socialm2"></div>
+                            <div id="socialm3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    // update log
+    document.addEventListener("DOMContentLoaded", function() {
+        // Store the original content of #content
+        const originalContent = document.getElementById("content").innerHTML;
+
+        // Function to change the content dynamically
+        function changeContent(newContent) {
+            document.getElementById("content").innerHTML = newContent;
+        }
+
+        // Add event listener for the "Update Log" button
+        document.getElementById("update-log").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevents page refresh
+
+            // Update Log Content
+            let updateLogContent = `
+                <img src="Images/bdivider.png" alt="" id="b-divider">
+                <h1>Update Log</h1>
+                <div id="contentwrap">
+                    <p>APRIL 2025</p>
+                    <ul>
+                        <li>
+                            <b>04.05.2025</b>
+                            - CREATED MY MICKEY 17 PAGE :33 
+                            <hr>
+                            - make an animated bar line very cool very nice
+                            <hr>
+                            - added the body image and need to make the character cards and links etc etc
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <b>04.03.2025</b>
+                            - added some images! also added my original writing instead of just lorem.
+                            <hr>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <b>04.02.2025</b>
+                            - finished my <a href="subnautica.html"">SUBNAUTICA!!!</a> SHRINE PAGE!! not the biggest fan but its ok i'll revamp in 20 years
+                            <hr>
+                            - need to fill in text boxes and images
+                        </li>
+                    </ul>
+                    <p>MARCH 2025</p>
+                    <ul>
+                        <li>
+                            <b>03.31.2025</b>
+                            - why is it literally april...
+                            <hr>
+                            - created my <a href="shrines.html">shrine</a> page bc i need to rant
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <b>03.12.2025</b>
+                            - uploaded sooo much art
+                            <hr>
+                            - added art descs
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <b>03.11.2025</b>
+                            - need to add more art, site still looks empty
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <b>03.10.2025</b>
+                            - added some art to the art page
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <b>03.01.2025</b>
+                            - wow its march. i added ONE drawing to the art page. optimized the images for web and its all good now. need to add a billion more...
+                        </li>
+                    </ul>
+                    <p>FEB 2025</p>
+                    <ul>
+                        <li>
+                            <b>02.28.2025</b>
+                            - finished art page, need to input images now!
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <b>02.24.2025</b>
+                            - figured out how to had favicon icon, will make a better one eventually
+                            <hr>
+                            - finished the drawing page layout, need to input art and stuff
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <b>02.20.2025</b>
+                            - finished the cooking website! just need to fix font, ugly image icons and add more stuff
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <b>02.19.2025</b>
+                            - i began coding the cooking site :3 got the layout done just need to style it
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <b>02.17.2025</b>
+                            - fixed update log, it now scrolls down and is properly listed
+                            <hr>
+                            GOALS: add blinkies and links 
+                            <hr>
+                            - added placeholder blinkies...dunno if i like them or not
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <b>02.16.2025</b>
+                            - added music function
+                            <hr>
+                            - i lowkey forgot
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <b>02.15.2025</b>
+                            - Literally fixed everything.
+                            <hr>
+                            - Added pictures/icons. Added social media icons, website banners, etc
+                            <hr>
+                            - Added functionality to Update Logs. Hello
+                            <hr>
+                            GOALS : add links and create my playlist feature | add blinkies
+                            </li>
+                    </ul>
+                </div>
+                <img src="Images/bdivider.png" alt="" id="b-divider">
+
+                <style>
+                    #contentwrap{
+                        display:block;
+                        overflow-y:auto;
+                        width:90%;
+                    }
+                    #contentwrap hr{
+                        color:#DC1D46;
+                        border-style:solid;
+                    }
+                    #contentwrap ul{
+                        list-style:none;
+                        margin-bottom:50px;
+                    }
+                    #content{
+                        animation: Swipe .5s forwards;
+                        transform: translateY(-10px);
+                    }
+                    @keyframes Swipe {
+                        to {
+                            transform: translateY(0);
+                        }
+                    }
+                    
+                </style>
+            `;
+
+            // Replace content with Update Log
+            changeContent(updateLogContent);
+        });
+
+        // Add event listener for the "Home Page" button
+        document.getElementById("home-page").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevents page refresh
+
+            // Restore original content
+            changeContent(originalContent);
+        });
+    });
+
+    // music player
+    document.addEventListener("DOMContentLoaded", function () {
+    const playlist = [
+        "https://files.catbox.moe/vi88wc.mp3",
+        "https://files.catbox.moe/vx9oh7.mp3",
+        "https://files.catbox.moe/lfk5of.mp3",
+    ];
+
+    let currentSongIndex = 0;
+    let audio = new Audio(playlist[currentSongIndex]);
+    let isPlaying = false;
+
+    const playPauseBtn = document.getElementById("play-pause");
+    const nextBtn = document.getElementById("next-song");
+    const prevBtn = document.getElementById("prev-song");
+    const songTitle = document.getElementById("current-song");
+
+    function updateSongTitle() {
+        songTitle.textContent = `Now Playing: ${playlist[currentSongIndex].split('/').pop()}`;
+    }
+
+    function playPause() {
+        if (isPlaying) {
+            audio.pause();
+            playPauseBtn.textContent = "▶️";
+        } else {
+            audio.play();
+            playPauseBtn.textContent = "⏸️";
+        }
+        isPlaying = !isPlaying;
+    }
+
+    function nextSong() {
+        audio.pause();
+        currentSongIndex = (currentSongIndex + 1) % playlist.length;
+        audio = new Audio(playlist[currentSongIndex]);
+        updateSongTitle();
+        if (isPlaying) audio.play();
+    }
+
+    function prevSong() {
+        audio.pause();
+        currentSongIndex = (currentSongIndex - 1 + playlist.length) % playlist.length;
+        audio = new Audio(playlist[currentSongIndex]);
+        updateSongTitle();
+        if (isPlaying) audio.play();
+    }
+
+    playPauseBtn.addEventListener("click", playPause);
+    nextBtn.addEventListener("click", nextSong);
+    prevBtn.addEventListener("click", prevSong);
+
+    updateSongTitle();
+});
+</script>
+
+
+
+
+</html>

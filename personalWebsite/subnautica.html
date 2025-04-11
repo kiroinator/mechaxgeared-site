@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subnautica | Shrine</title>
+
+    <style>
+        html{
+            scroll-behavior: smooth
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap');
+        body{
+            background-color: #052C26;
+            background-image: url(shrineimages/background-subnautica.webp);
+            background-size: cover;
+            padding-top: 20px;
+        }
+        h1,h2,h3{
+            font-family: "Kdam Thmor Pro", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        p,a{
+            font-family: "Khand", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        #wrapper{
+            background-color: #eaf3ff60;
+            display: flex;
+            max-height: 600px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            max-width: 1090px;
+            margin: auto;
+            gap: 40px;
+            padding: 30px;
+            border-radius: 30px;
+            border: 2px solid #6bebff;
+            box-shadow: #d8faff 0px 3px 5px 1px;  
+        }
+        section #miscmedia{
+            flex-direction: column;
+        }
+        #fish{
+            min-height: 200px;
+            width: 400px;
+            background-color: none;
+        }
+        h3{
+            text-align: center;
+            background:linear-gradient(180deg, #11588e70 40%,#7396d28e 90%);;
+            border: 2px solid #6bebff;
+            box-shadow: #6bebff 0px 3px 3px 3px;   
+            padding: 1rem;
+            border-radius: 20px;
+            color: white;
+        }
+        #fishimages{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .f-image{
+            /* background-color: aqua; */
+            height: 90px;
+            width: 120px;
+            margin-left: 5px;
+            background-size: cover;
+        }
+        #fishimages img{
+            transition: .2s;
+            background-size: cover;
+            transform: translateY(30px);
+        }
+        #fishimages img:hover{
+            scale: 1.3;
+            transform: rotate(30deg) translateY(20px);
+        }
+        #snapshots{
+            max-height: 800px;
+            overflow-y: scroll;
+            margin-top: 30px;
+        }
+        .snapshot{
+            background-color: lightgreen;
+            width: 100%;
+            height: 250px;
+            margin-bottom: 10px;
+        }
+
+        section #main{
+            flex-direction: column;
+        }
+        #maincard{
+            background:linear-gradient(180deg, #33315f70 40%,#7396d2b3 100%);;
+            border: 2px solid #6bebff;
+            box-shadow: #6bebff 0px 3px 5px 3px;            
+            border-radius: 30px;
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+            color: aliceblue;
+        }
+        #gamedesc{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            margin: auto;
+            border: 3px solid #172942;
+            margin-bottom: 20px;
+        }
+        #gameimage{
+            background-color: darkgreen;
+            width: 48%;
+            min-height: 250px;
+            background-image: url(shrineimages/nauticacover.png);
+            background-size: cover;
+        }
+        #gamedesc p{
+            width: 50%;
+            padding: 5px;
+            letter-spacing: 1.1px;
+            text-align: justify;
+            background-color: #172942;
+            color: aliceblue;
+            margin: 0;
+            font-size: 12px;
+        }
+        #gamedesc a{
+            color: rgba(240, 248, 255, 0.518);
+            text-decoration: none;
+
+        }
+        #spacer{
+            width: 400px;
+            height: 200px;
+            background-image: url(shrineimages/nauticatube.webp);
+            background-size: cover;
+            margin: auto;
+        }
+        #diverslog{
+            background:linear-gradient(180deg, #33315f70 40%,#7396d2b3 100%);;
+            border: 2px solid #6bebff;
+            box-shadow: #6bebff 0px 3px 5px 3px;            
+            border-radius: 30px;            width: 100%;
+            height: 510px;
+            overflow-y: scroll;
+            border-radius: 30px;
+            margin-top: 30px;
+        }
+        h2{
+            margin: 20px;
+            color: aliceblue;
+        }
+        #log-nav{
+            width: 90%;
+            height: 50px;
+            display: flex;
+            margin: auto;
+        }
+        #log-nav a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+        .lognavs{
+            width: 150px;
+            background-color: #cfd0db87;
+            justify-content: space-evenly;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            border-radius: 20px;
+            transition: .3s;
+
+        }
+        .lognavs:hover{
+            transform: scale(1.05);
+            box-shadow: aliceblue 0px 0px 10px 2px;
+
+        }
+        #diverslog p{
+            text-align: justify;
+            margin: auto;
+            width: 95%;
+            margin-top: 20px;
+            color: aliceblue;
+        }
+        footer{
+            background-color: #6b4e0989;
+            height: 200px;
+            background-image: url(shrineimages/nauticafooter.webp);
+            background-size: 350px;
+            background-repeat: no-repeat;
+            margin: 0;
+            transition: .5s;
+        }
+        footer p{
+            text-align: center;
+            position:relative;
+            top: 100px;
+        }
+        footer a{
+            color:#172F2A;
+            background-color: #f0f8ff95;
+            border-radius: 30px;
+            text-decoration: none;
+            padding: 1rem;
+        }
+        
+        footer a:hover{
+            text-decoration: underline;
+        }
+        footer:hover{
+            transform: scale(.99);
+        }
+        #media1{
+            display: flex;
+        }
+        #media1 p{
+            padding: 20px;
+        }
+        #media1 a{
+            color: #9dd1ff;
+        }
+        #taurtis{
+            width: 100%;
+            min-height: 10px;
+            background-image: url(shrineimages/taurtisthumbnail.png);
+            background-size: contain;
+            border: 10px solid rgba(255, 255, 255, 0.327);
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <section id="miscmedia">
+            <div id="fish">
+                <h3>FAVORITE FISH</h3>
+                <div id="fishimages">
+                    <img src="shrineimages/nauticastalker.webp" class="f-image">
+                    <img src="shrineimages/nauticaray.webp" class="f-image">
+                    <img src="shrineimages/nauticafloater.webp" class="f-image">
+                </div>
+            </div>
+
+            <div id="snapshots">
+                <h3>SNAPSHOTS</h3>
+                <img src="" class="snapshot">
+            </div>
+        </section>
+
+        <section id="main">
+            <div id="maincard">
+                <h1>SUBNAUTICA</h1>
+                <div id="gamedesc">
+                    <div id="gameimage"></div>
+                    <p>Subnautica was released in early access for Windows in December 2014, macOS in June 2015, and Xbox One in May 2016. The game was released out of early access in January 2018 for macOS and Windows, with versions for PlayStation 4 and Xbox One in December 2018. The physical console versions were published by Gearbox Publishing. The Nintendo Switch, PlayStation 5, and Xbox Series X/S versions were released in May 2021. It received generally positive reviews from critics and sold over 5 million units by January 2020. A spin-off, Subnautica: Below Zero, which was originally meant to be downloadable content for the base game, was released in May 2021. A direct sequel, Subnautica 2, is planned to release in early access sometime in 2025. - <a href="https://en.wikipedia.org/wiki/Subnautica">wikipedia</a></p>
+                </div>
+            </div>
+
+            <div id="spacer"></div>
+
+                <div id="diverslog">
+                    <h2>DIVERS LOG...</h2>
+                    <div id="log-nav">
+                        <div id="thoughts" class="lognavs"><a href="#thoughtswritten">thoughts</a></div>
+                        <div id="media" class="lognavs"><a href="#favmediawritten">fav media</a></div>
+                        <div id="log" class="lognavs"><a href="#writtenlog">divers log</a></div>
+                    </div>
+                    <h2 class="log-titles" id="thoughtswritten"><i>thoughts</i></h2>
+                    <p>I only just started playing Subnautica a couple weeks ago and I LOVE IT! I was watching a youtuber play this game, which I'll mention down in media, and I thought <i>huh, i forgot how much i wanted to play this game in 2015.</i> It looked like a silly survival fish game that seemed fun. Anyway I downloaded it and its superrr fun!! I love the sea and fishies and aliens and this game is a mix of all that. I'll admit I'm not great at combat or finding the other escape pods in game, I'm more of a scavenging person. I've also been focussing on building habitats and upgrading my stuff rather than exploring too deep...its not like i can manage anyway. I already died trying to explore a deep cave, lost some materials. I'm moving rather slow at the game but its nice to just look around sometimes. Beautiful game, really.</p>
+
+                    <hr>
+
+                    <h2 class="log-titles" id="favmediawritten"><i>fav media</i></h2>
+                    <div id="media1">
+                        <div id="taurtis"></div>
+                        <p>I originally found this guy through Sam Gladiator's Minecraft series, didn't know he had a personal channel until after I watched it. (Mind you this was back in 2015-2016) I thought he was funny and I didn't realize until a month ago that he recorded a <a href="https://www.youtube.com/watch?v=zxD-f49_4TU&list=PLklvhIROVRxpMYm97gVpSTWfPwQHsd_Gg">Let's Play of Subnautica!</a> He's a really fun youtuber that makes the whole video watchable due to his yapping, so I'm glad I discovered this series. Really helped me figure out what I was supposed to do at the beginning of the game despite it being an older version. Def a good watch!</p>
+                    </div>
+
+
+                </div>
+        </section>
+    </div>
+    <footer>
+        <div id="footerimage">
+            <p><a href="shrines.html">go back</a> | <a href="https://store.steampowered.com/app/264710/Subnautica/">steam page</a> | <a href="https://en.wikipedia.org/wiki/Subnautica">wiki page</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

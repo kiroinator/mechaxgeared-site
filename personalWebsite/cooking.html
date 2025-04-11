@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Page</title>
+    
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
+
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: #83AB82;
+        }
+        #wrapper{
+            margin: auto;
+            margin-top: 30px;
+            max-width: 75%;
+            height: 600px;
+        }
+        #container{
+            background-color: #DFDED1;
+            border-radius: 20px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            height: 550px;
+            overflow-y: auto;
+        }
+        #title{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+        }
+        h1{
+            font-size: 40px;
+            font-family: "Freckle Face", serif;
+            margin-left: 180px;
+            color: #1d5135;
+        }
+        p#titlesub{
+            font-family: "Freckle Face", serif;
+            margin-top: 40px;
+            padding-left: 20px;
+            color: #1d5135;
+
+
+        }
+        #desc p{
+            margin: auto;
+            width: 70%;
+            font-size: 14px;
+            text-align: center;
+        }
+        p{
+            font-family: "Jomolhari", serif;
+            color: #1d5135;
+
+        }
+        #navbuttons{
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            width: 80%;
+            justify-content: space-evenly;
+            margin-top: 50px;
+        }
+        #navbuttons div{
+            border: 3px solid #83AB82;
+            border-radius: 20px;
+            width: 120px;
+            height: 120px;
+            background-size: cover;
+            transition: .3s ease-in-out;
+
+        }
+        #navbuttons div:hover{
+            scale: 1.1;
+
+        }
+        #button1{
+            background-image: url(cookingImages/image1.png);
+        }
+        #button2{
+            background-image: url(cookingImages/image2.png);
+
+        }
+        #button3{
+            background-image: url(cookingImages/image3.png);
+
+        }
+        #content{
+            width: 80%;
+            min-height: 400px;
+            margin: auto;
+            margin-top: 100px;
+            overflow-y: auto;
+
+        }
+        h2{
+            background-color: #83AB82;
+            padding: 18px;
+            width: 30%;
+            color: #DFDED1;
+
+        }
+        #inforows{
+            display: flex;
+            flex-direction:row;
+        }
+        .foodimage{
+            min-width: 140px;
+            height: 180px;
+            background-size: cover;
+            
+        }
+        .extrafoodim{
+            height: 160px;
+            min-width: 120px;
+            margin-left: 5px;
+            background-size:cover;
+
+        }
+        .extrafoodim:hover{
+            scale: 1.1;
+
+        }
+        #foodwrap{
+            flex-direction: column;
+            padding: 20px;
+        }
+        #foodwrap p{
+            font-size: 12px;
+
+        }
+        ul,li{
+            color: #1d5135;
+            font-family: "Jomolhari", serif;
+            font-size: 11px;
+
+        }
+        #mushroom{
+            background-image: url(cookingImages/mushroomstew.png);
+        }
+        #mush1{
+            background-image: url(cookingImages/im1.png);
+        }
+        #mush2{
+            background-image: url(cookingImages/im2.png);
+        }
+        #mush3{
+            background-image: url(cookingImages/im3.png);
+        }
+        #desc a{
+            text-align: center;
+            text-decoration: none;
+            color: #DC1D46;
+            margin: auto;
+            display: block;
+        }
+        #desc a:hover{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div id="title">
+                <h1>WHO KNEW I COULD COOK?!</h1>
+                <p id="titlesub">(not a cookbook)</p>
+            </div>
+            <div id="desc">
+                <p>Early 2024 or so I found joy in cooking. I haven’t made a lot, but i have a feeling this will change in the next couple years. Here I’ll try to document my process because..where else will i put this!!</p>
+                <hr>
+                <a href="index.html">go back</a>
+            </div>
+            <section id="navbuttons">
+                <a href="#baking"><div id="button1"></div></a>
+                <a href="#meals"><div id="button2"></div></a>
+                <a href="#misc"><div id="button3"></div></a>
+            </section>
+
+            <section id="content">
+                <h2 id="baking">BAKING</h2>
+                <h2 id="meals">MEALS</h2>
+                <div id="inforows">
+                    <a href="cookingImages/mushroomstew.png"><div class="foodimage" id="mushroom"></div></a>
+                    <div id="foodwrap">
+                        <p>
+                            <i><b>MUSHROOM STEW??</b></i>
+                            <hr>
+                            <p>I love mushrooms this was the first thing I learned to make on my own, no recipe no nothing. It's a nice meal on its own or served with tortilla :)</p>
+                            <hr>
+                            <p>INGREDIENTS
+                                <hr>
+                                <ul>
+                                    <li>One packet of blanc mushrooms</li>
+                                    <li>ground beef meat</li>
+                                    <li>bell pepper</li>
+                                    <li>onion</li>
+                                    <li>garbanzos</li>
+                                    <li>potato</li>
+                                    <li>pepper seasoning</li>
+                                    <li>achiote seasoning</li>
+                                    <li>garlic powder seasoning</li>
+                                    <li>herb mix seasoning</li>
+                                    <li>salt</li>
+                                </ul>
+                            </p>
+                        </p>
+                    </div>
+                    <a href="cookingImages/im1.png"><div class="extrafoodim" id="mush1"></div></a>
+                    <a href="cookingImages/im2.png"><div class="extrafoodim" id="mush2"></div></a>
+                    <a href="cookingImages/im3.png"><div class="extrafoodim" id="mush3"></div></a>
+                </div>
+                <h2 id="misc">MISC</h2>
+                <div id="inforows">
+                    <div id="foodwrap">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrine Page</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+
+    <style>
+        #content{
+            width: 100%;
+        }
+        #b-divider{
+            width: 50%;
+        }
+        #contentwrap{
+            flex-wrap: wrap;
+            margin: auto;
+            gap: 20px;
+            width: 95%;
+
+
+        }
+        .shrine-buttons{
+            background-color: none;
+            filter: grayscale(70%);
+            height: 150px;
+            width: 150px;
+            padding: 0;
+            transition: .5s;
+            cursor:grab;
+        }
+        .shrine-buttons:hover{
+            filter: grayscale(0);
+            transform: scale(1.1) translateX(10px);
+        }
+        #subnautica{
+            background-image: url(shrineimages/subnautica.png);
+            background-size: contain;
+
+        }
+        #mickey17{
+            background-image: url(shrineimages/mickey17.png);
+            background-size: contain;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div id="title">
+                <img src="Images/mainicon.png" id="titleimage">
+            </div>
+            <img src="Images/border.png" id="divider">
+            <div id="in-container">
+                <div id="nav">
+                    <h2>Home Page</h2>
+                    <ul>
+                        <li><a href="index.html">
+                            <img src="Images/icon.png" alt="" id="navicon1">
+                            home page
+                        </a></li>
+                        <li id="update-log">
+                            <a href="error.html">
+                                <img src="Images/icon.png" alt="" id="navicon1">
+                                update log
+                            </a>
+                        </li>
+                    </ul>
+                    <h2>My Media</h2>
+                    <ul>
+                        <li><a href="drawing.html">
+                            <img src="Images/icon.png" alt="" id="navicon1">
+                            drawing
+                        </a></li>
+                        <li><a href="">
+                            <img src="Images/icon.png" alt="" id="navicon1">
+                            writing
+                        </a></li>
+                        <li><a href="cooking.html">
+                            <img src="Images/icon.png" alt="" id="navicon1">
+                            cooking
+                        </a></li>
+                    </ul>
+                    <h2>Interests</h2>
+                    <ul>
+                        <li><a href="shrines.html">
+                            <img src="Images/icon.png" alt="" id="navicon1">
+                            Shrines
+                        </a></li>
+                    </ul>
+                </div>
+                <div id="content">
+                    <img src="Images/bdivider.png" id="b-divider">
+                    <h1>SHRINE LIST</h1>
+                    <p>shrines are my individual webpages based on whatever interest i have at the moment. <i>Ooh i love something so much i’m going to make a website about it!!</i> At least thats what i have seen here on neocities. For the most part i will be using these to document anything im interested in.</p>
+                    <div id="contentwrap">
+                        <a href="subnautica.html"><div class="shrine-buttons" id="subnautica"></div></a>
+                        <a href="mickey17.html"><div class="shrine-buttons" id="mickey17"></div></a>
+                        <div class="shrine-buttons" id="singed"></div>
+                        <div class="shrine-buttons" id="arcane"></div>
+                        <div class="shrine-buttons" id="arcane"></div>
+                        <div class="shrine-buttons" id="arcane"></div>
+                        <div class="shrine-buttons" id="arcane"></div>
+                        <div class="shrine-buttons" id="arcane"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

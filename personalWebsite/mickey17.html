@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Fugaz+One&display=swap');
+    body {
+      margin: 0;
+      background-image: url(shrineimages/mickeybody.jpg);
+      background-size: cover;
+      font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 103.2;
+    color: white;
+    scroll-behavior: smooth;
+    }
+
+    h3,h4{
+      font-weight: 300;
+    }
+
+    /* Overlay */
+    #overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: black;
+      z-index: 9999;
+      opacity: 1;
+      transition: opacity 1s ease;
+    }
+
+    #wrapper {
+      opacity: 0;
+      transition: opacity 1s ease;
+      visibility: hidden;
+    }
+
+    h1 {
+      color: white;
+      font-size: 140px;
+      white-space: nowrap;
+      margin: 0;
+      font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style:oblique;
+    }
+
+    #moviedesc {
+      color: white;
+      font-size: 14px;
+      max-width: 300px;
+      margin-left: 20px;
+      margin-top: 60px;
+      text-align: justify;
+      opacity: 0;
+      animation: fadeInDesc 1s ease forwards;
+      animation-delay: 5s;
+    }
+
+    @keyframes fadeInDesc {
+      to { opacity: 1; }
+    }
+
+    .horizontal {
+      height: 3px;
+      width: 0;
+      background-color: white;
+      animation: growLineHorizontal 1s ease-out forwards;
+      animation-delay: 3s;
+    }
+
+    .vertical {
+      position: absolute;
+      left: 100%;
+      top: 0;
+      width: 3px;
+      height: 0;
+      background-color: white;
+      animation: growLineVertical 0.6s ease-out forwards;
+      animation-delay: 4s;
+    }
+
+    .line-container {
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-left: 70px;
+      margin-right: 50px;
+      min-width: 100px;
+      margin-top: 60px;
+    }
+
+    .line-horizontal-wrapper {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    @keyframes growLineHorizontal {
+      to { width: 150px; }
+    }
+
+    @keyframes growLineVertical {
+      to { height: 60px; }
+    }
+
+    #container {
+      margin: 10px;
+      background-color: #03030340;
+      border-radius: 20px;
+      height: 650px;
+      overflow-y: scroll;
+    }
+
+    #topflex {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    #title-row {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-top: 0;
+      justify-content: flex-start;
+      min-height: 400px;
+    }
+
+    #middleflex {
+      display: flex;
+      flex-direction: column;
+      min-height: 200px;
+      color: white;
+      margin-left: 100px;
+    }
+
+    #charactersheet {
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #mickey17, #nasha, #creeper {
+      min-height: 200px;
+      display: flex;
+    }
+
+    #mickeydesc, #nashadesc, #creeperdesc {
+      flex-direction: column;
+      display: flex;
+      margin-left: 200px;
+      margin-top: 100px;
+    }
+
+    #mickey18 {
+      min-height: 200px;
+      display: flex;
+    }
+
+    #mickey18desc {
+      flex-direction: column;
+      display: flex;
+      margin-left: 200px;
+    }
+
+    .charimages{
+      min-height: 380px;
+      width: 350px;
+      margin-left: 200px;
+    }
+    .charsections{
+      margin-bottom: 100px;
+    }
+    .chardesc{
+      border-radius: 10px;
+      background-color: #00000080;
+      padding: 15px;
+      min-height: 100px;
+      width: 300px;
+      border: 2px solid white;
+      color: #ffffffaa;
+    }
+    #mickeypic{
+      background-image: url(shrineimages/oopsthisismickey17.png);
+      background-size:cover;
+      background-repeat: no-repeat;
+      transition:ease-in-out .2s;
+    }
+    #mickeypic:hover{
+      background-image: url(shrineimages/mickey17char2.png);
+      background-size:cover;
+      background-repeat: no-repeat;
+      transform: scale(1.1);
+    }
+    #mickey18pic{
+      background-image: url(shrineimages/mickey17char1.png);
+      background-size:cover;
+      background-repeat: no-repeat;
+      transition:ease-in-out .2s;
+    }
+    #mickey18pic:hover{
+      background-image: url(shrineimages/mickey181.png);
+      background-size:cover;
+      background-repeat: no-repeat;
+      transform: scale(1.1);
+    }
+    #nashapic{
+      background-color: red;
+    }
+   
+    
+  </style>
+</head>
+<body>
+  <!-- Black screen overlay -->
+  <div id="overlay"></div>
+
+  <!-- Actual content -->
+  <div id="wrapper">
+    <div id="container">
+      <div id="topflex">
+        <div id="title-row">
+          <h1>MICKEY&nbsp;17</h1>
+          <div class="line-container">
+            <div class="line-horizontal-wrapper">
+              <div class="horizontal"></div>
+              <div class="vertical"></div>
+            </div>
+          </div>
+          <div id="moviedesc">
+            A disposable employee is sent on a human expedition to colonize the ice world Niflheim during the year 2050. After one iteration dies, a new body is regenerated with most of his memories intact. 
+            <hr>
+            Release date: March 7, 2025 (USA)
+            <hr>
+            Director: Bong Joon Ho
+            <hr>
+            Screenplay: Bong Joon Ho
+            <hr>
+            Budget: $118 million
+            <hr>
+            Adapted from: Mickey7
+            <hr>
+            Distributed by: Warner Bros. Pictures
+          </div>
+        </div>
+
+        <div id="middleflex">
+          <h3><a href="#charactersheet" style="color: white; text-decoration: none;">characters</a></h3>
+          <h3 style="color: #ffffff8b;">thoughts</h3>
+          <h3><a href="shrines.html" style="color: white; text-decoration: none;">shrine page</a></h3>
+        </div>
+
+        <div id="charactersheet">
+          <section id="mickey17" class="charsections">
+            <div id="mickeydesc">
+              <h4>MICKEY 17 / MICKEY BARNES</h4>
+              <p id="mickeydesc2" class="chardesc">
+                Mickey Barnes is "Expendable", he is used in an illegal process where he takes on lethal tasks and a new clone of him with restored memories is created after each death. After so many deaths, he becomes Mickey 17.Do not ask him how it's like to die. Nasha's boyfriend.
+              </p>
+            </div>
+            <div id="mickeypic" class="charimages"></div>
+          </section>
+
+          <section id="mickey18" class="charsections">
+            <div id="mickey18pic" class="charimages"></div>
+            <div id="mickey18desc">
+              <h4>MICKEY 18 / THE DOUBLE</h4>
+              <p id="mickey18desc2" class="chardesc">
+                The slightly aggressive but reasonable clone of Mickey 17, originally tries to kill him but reasoned. 
+              </p>
+            </div>
+          </section>
+
+          <section id="nasha" class="charsections">
+            <div id="nashadesc">
+              <h4>NASHA BARRIDGE / SECURITY AGENT</h4>
+              <p id="nashadesc2" class="chardesc">
+                Soldier, security agent of the expedition ship. Fearless and clever, she basically helped save the world (their expedition ship)
+              </p>
+            </div>
+            <div id="nashapic" class="charimages"></div>
+          </section>
+
+          <section id="creeper" class="charsections">
+            <div id="creeperpic" class="charimages"></div>
+            <div id="creeperdesc">
+              <h4>HONARY MENTION / CREEPERS</h4>
+              <p id="creeperdesc2" class="chardesc">
+                The cutest alien species on Niflheim, passive if not attacked. 
+              </p>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.getElementById("overlay").style.opacity = "0";
+        setTimeout(() => {
+          document.getElementById("overlay").style.display = "none";
+          const wrapper = document.getElementById("wrapper");
+          wrapper.style.opacity = "1";
+          wrapper.style.visibility = "visible";
+        }, 1000); // Wait for fade transition
+      }, 500); // Initial black screen duration
+    });
+  </script>
+</body>
+</html>

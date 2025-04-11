@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
+
+body{
+    background-color: #23292F;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    transform: scale(.9);
+
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+#container{
+    background-color: #0E0D0D;
+    border: 2px solid #0E0D0D;
+    max-width: 850px;
+    height: 600px;
+    margin: auto;
+    /* border-radius: 20px; */
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+#title{
+    background-color: #0E0D0D;
+    width: 100%;
+    min-height: 100px;
+}
+#titleimage{
+    height: 80px;
+    width: 150px;
+    margin-left: 30px;
+    margin-top: 10px;
+    display: block;
+}
+#divider{
+    background-color: #DC1D46;
+    width: 100%;
+    height: 25px;
+}
+#in-container{
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - 25px);  
+    overflow: hidden;
+}
+
+/* left side nav */
+#nav{
+    background-color: #23292F;
+    min-width: 200px;
+    height: 100%;
+    border: 1px solid #0E0D0D;
+    overflow-y:auto;
+}
+#nav h2{
+    background-color: #489FB5;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: "Jockey One", serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 2px;
+}
+#nav li, a{
+    list-style: none;
+    text-align: left;
+    color: #489FB5;
+    padding-top: 20px;
+    font-family: "Jomolhari", serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+
+}
+#nav a:hover{
+    color: #A5B9C3;
+}
+#navicon1{
+    background-color: #23292F;
+    width: 15px;
+    height: 15px;
+}
+/* middle part */
+#content{
+    background-color: #23292F;
+    border: 1px solid #0E0D0D;
+    min-width: 50%;
+    height: 100%;
+    color: #489FB5;
+    overflow-y:auto;
+
+
+}
+
+#b-divider{
+    width: 95%;
+    height: 25px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+
+}
+#mainicon{
+    background-color: #0E0D0D;
+    background-image: url(Images/pfp.png);
+    background-size: cover;
+    height: 280px;
+    width: 500px;
+    display: flex;
+}
+#const{
+    width: 70%;
+    height: 8px;
+    margin: auto;
+}
+#morewrap{
+    display: flex;
+    flex-direction: column;
+}
+#content p{
+    padding: 10px;
+    margin-left: 20px;
+    color: #A5B9C3;
+    font-family: "Jomolhari", serif;
+    font-size: 11px;
+
+
+}
+#content h1{
+    padding: 10px;
+    padding-left: 30px;
+    font-family: "Jockey One";
+    letter-spacing: 2px;
+
+}
+#contentwrap{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    max-width: 98%;
+    gap: 10px;
+    overflow-y:auto;
+
+}
+#blinkie1{
+    height: 75px;
+    width: 10%;
+    margin-top: 15px;
+    margin-left: 0;
+}
+#blinkie1{
+    height: 40px;
+    width: 30%;
+    margin-top: 15px;
+    margin-left: 0;
+}
+/* right content */
+#right-content{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#music-player{
+    /* border: 1px solid #23292F; */
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    position: relative;
+    margin: 20px auto;
+}
+#stereo-img {
+    width: 100%;
+    height: 90%;
+    display: block;
+}
+
+#player-controls {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: -60px; /* Moves buttons over the stereo */
+}
+
+button {
+    background-color: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #23292F;
+}
+
+button:hover {
+    background-color: none;
+}
+
+#current-song {
+    font-size: 10px;
+    margin-top: 30px;
+    color: #489FB5;
+
+}
+
+
+
+
+#status{
+    background-color: #23292F;
+    height: 30%;
+    width: 98%;
+    border: 2px solid #0E0D0D;
+
+}
+#status-star{
+    background-color: red;
+    height: 38px;
+    width: 30px;
+}
+#status-bar{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+#status h2{
+    background-color: #489FB5;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    font-family: "Jockey One";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+
+}
+.lastupdated{
+    padding-top: 1px;
+    font-size: 10px;
+    opacity: 60%;
+    color: #A5B9C3;
+    margin: auto;
+    margin-left: 10px;
+
+}
+#statusp{
+    color: #A5B9C3;
+    margin: auto;
+    margin-left: 10px;
+    line-height: 25px;
+    font-family: "Jomolhari", serif;
+    font-size: 14px;
+
+}
+#social-media{
+    width: 100%;
+    height: 30%;
+    border: ipx solid #0E0D0D;
+}
+#social-m{
+    color: #489FB5;
+    align-items: center;
+    display: flex;
+    margin-left: 15px;
+    font-family: "Jockey One";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+
+}
+#socialicon{
+    height: 30px;
+    width: 30px;
+    background-color: #489FB5;
+    margin-right: 10px;
+}
+#socialm-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 40%;
+    margin: auto;
+}
+#socialm-wrapper div{
+    padding: 3px;
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out .3s;
+    filter: grayscale(70%);
+}
+#socialm-wrapper div:hover{
+    scale: 1.2;
+    filter: grayscale(0%);
+
+}
+#socialm1{
+    background-image: url(Images/tumblr.png);
+    background-size: cover;
+}
+#socialm2{
+    background-image: url(Images/insta.png);
+    background-size: cover;
+}
+#socialm3{
+    background-image: url(Images/disc.png);
+    background-size: cover;
+}
+
+
+
+

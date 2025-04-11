@@ -1,0 +1,49 @@
+#pic1{
+    background-image: url(drawingImages/art1-cover.jpg);
+}
+#pic2{
+    background-image: url(drawingImages/art2.jpeg);
+}
+#pic3{
+    background-image: url(drawingImages/art3.jpeg);
+}
+#pic4{
+    background-image: url(drawingImages/lowpinkguy.jpg);
+}
+#pic5{
+    background-image: url(drawingImages/lowart5.jpg);
+}
+#pic6{
+    background-image: url(drawingImages/lowart6.jpg);
+}
+#pic7{
+    background-image: url(drawingImages/lowart7.jpg);
+}
+#pic8{
+    background-image: url(drawingImages/lowart8.jpg);
+}
+#pic9{
+    background-image: url(drawingImages/lowart9.jpg);
+    background-size: cover;
+}
+#pic10{
+    background-image: url(drawingImages/lowart10.jpg);
+}
+#pic11{
+    background-image: url(drawingImages/lowart11.jpg);
+}
+#pic12{
+    background-image: url(drawingImages/lowart12.jpg);
+}
+#crep1{
+    background-image: url(drawingImages/crep1low.jpg);
+}
+#pic13{
+    background-image: url(drawingImages/lowart13.jpg);
+}
+#pic16{
+    background-image: url(drawingImages/lowart16.jpg);
+}
+#pic14{
+    background-image: url(drawingImages/lowart14.jpg);
+}
