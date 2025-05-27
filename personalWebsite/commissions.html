@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commissions Page</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+        .fira-code-font {
+            font-family: "Fira Code", monospace;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+        }
+        *{
+            scroll-behavior: smooth;
+
+        }
+        body{
+            background-color: #dce0e4;
+            font-family: "Fira Code", monospace;
+        }
+        h3{
+            text-align: center;
+        }
+        .desc{
+            text-align: center;
+        }
+        li{
+            line-height: 2;
+            list-style-type: none;
+            padding: 10px;
+        }
+        #leftmain li:hover{
+            font-weight: 600;
+            text-decoration: underline;
+        }
+        #leftmain a{
+            text-decoration: none;
+            color: black;
+        } 
+        @media only screen and (min-width:1040px){
+        #wrapper{
+            max-width: 1300px;
+            height: 100%;
+            margin: auto;
+        }
+        
+        #container{
+            max-width: 1200px;
+            height: 100%;
+            margin: auto;
+            display: flex;
+        }
+        #leftmain{
+            flex: 1;
+        }
+        #rightmain{
+            flex: 3;
+            background-color:#94cfe2;
+            padding: 1rem;
+            max-height: 600px;
+            overflow-y: scroll;
+        }
+        .artrefs{
+            background-color: white;
+            width: 97%;
+            margin: auto;
+            height: 280px;
+            margin-top: 2rem;
+        }
+        #price-box{
+            background-color:#e4e7e9;
+            width: 80%;
+            height: 100%;
+            padding: 1rem;
+            margin: auto;
+        }
+        
+        #rules-box{
+            display: flex;
+            padding: 0;
+            margin: auto;
+        }
+        #willdo{
+            flex: 1;
+        }
+        #wontdo{
+            flex: 1;
+        }
+        #username,#small{
+            text-align: center;
+        }
+        #username{
+            font-size: 1.2rem;
+        }
+        #myicon{
+            width: 100px;
+            width: 100px;
+            background-color:deeppink;
+        }
+        footer p{
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 10px;
+        }
+        #leftmain ul{
+            flex-direction: column;
+        }
+        #leftmain li{
+            font-size: 1rem;
+        }
+        #backtop{
+            opacity: 1 !important;
+            color: black;
+
+        }
+        }
+        
+            #myicon{
+                margin: auto;
+            }
+            #username, #small, #leftmain li{
+                text-align: center;
+            }
+            #leftmain ul{
+                display: flex;
+                padding: 0;
+                font-size: .8rem;
+                width: 330px;
+                margin: auto;
+            }
+            #backtop{
+                opacity: 0;
+            }
+            h2, p,h3, h1{
+                text-align: center;
+            }
+            #rightmain{
+                background-color:#94cfe2;
+                padding: 1rem;
+            }
+            #price-box{
+                background-color:#e4e7e9;
+                width: 80%;
+                height: 100%;
+                padding: 1rem;
+                margin: auto;
+            }
+            .artrefs{
+            background-color: white;
+            width: 97%;
+            margin: auto;
+            height: 280px;
+            margin-top: 2rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <!-- container will hold both main flex elements -->
+            <!-- 30 / 70 layout -->
+            <div id="leftmain">
+                <!-- stack everything -->
+                    <img src="" id="myicon">
+                    <p id="username">mechaxgeared</p>
+                <p id="small">(or any other user I go by)</p>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">go home</a></li>
+                        <li><a href="#art-coms">art commissions</a></li>
+                        <li><a href="#3d-coms">3d comissions</a></li>
+                        <li><a href="#write-coms">writing comissions</a></li>
+                        <li id="backtop"><a href="commissions.html">go to top</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div id="rightmain">
+                <!-- flex stack -->
+                <h1 id="topsite">COMMISSION SITE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rem laborum cumque laboriosam, numquam exercitationem deleniti modi eius quo adipisci explicabo, maiores, ex ratione? Error corrupti eligendi laboriosam possimus porro corporis consectetur aspernatur nihil, accusamus recusandae ipsam vel pariatur praesentium!</p>
+
+                <section id="art-coms">
+                    <!-- flex stack -->
+                    <h2>ART COMISSIONS | STATUS: OPEN</h2>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corporis, aut natus fugit mollitia consequuntur reiciendis quos totam quaerat aliquid.</p>
+
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, nam!</p>
+
+                    <div id="add-ons">
+                        <h4>Add-Ons for all orders EXCEPT ref sheets</h4>
+                        <ul>
+                            <li>Simple Color Background : Free</li>
+                            <li>Complex Background : ~$15</li>
+                            <li>Extra Character : + Base Price</li>
+                        </ul>
+                    </div>
+
+                    <div id="iconref" class="artrefs">image here</div>
+
+                    <h3>Icon | Neck-Up</h3>
+
+                    <div id="price-box">
+                        <ul>
+                            <li>Icon Full Color : 5$</li>
+                        </ul>
+                    </div>
+
+
+                    <div id="styleA" class="artrefs">image here</div>
+
+                    <h3>Style A | Busts, Half-Body, Full Body</h3>
+                    <p class="desc">A style focussed on color, detail, and tone, not alwyas neatness</p>
+
+                    <div id="price-box">
+                        <ul>
+                            <li>Bust : 30$</li>
+                            <li>Half-Body : 45$</li>
+                            <li>Full-Body : 60$</li>
+                        </ul>
+                    </div>
+
+                    <div id="styleB" class="artrefs">image here</div>
+
+                    <h3>Style B | Busts, Half-Body, Full Body</h3>
+                    <p class="desc">A style focussed neat lineart, cell shading, soft renders.</p>
+
+                    <div id="price-box">
+                        <ul>
+                            <li>Bust : 15$</li>
+                            <li>Half-Body : 20$</li>
+                            <li>Full-Body : 40$</li>
+                        </ul>
+                    </div>
+
+                    <div id="refsheet" class="artrefs">image here</div>
+                    <!-- add link to the ref sheet -->
+                    <h3>Reference Sheet | Character Design</h3>
+                    <p class="desc">You have a choice between Style A or B, price depends on everything include. View my guide <a href="error.html">here</a></p>
+
+                    <div id="price-box">
+                        <ul>
+                            <li>Bust, Half-Body, Full-Body : View Style A or Style B</li>
+                            <li>Prop : 5$ - 10$ each</li>
+                            <li>Complex Prop/Detail : 15$~ each</li>
+                        </ul>
+                    </div>
+
+                    <div id="rules-box">
+                        <div id="willdo">
+                            <ul>
+                                <li>dfkjdj</li>
+                                <li>dfkjdj</li>
+                                <li>dfkjdj</li>
+                            </ul>
+                        </div>
+                        <div id="wontdo">
+                            <ul>
+                                <li>dfkjdj</li>
+                                <li>dfkjdj</li>
+                                <li>dfkjdj</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <footer>
+                        <p>end of art commmissions</p>
+                    </footer>
+                </section>
+
+                <section id="3d-coms">
+                    <h2>3D ART COMISSIONS | STATUS: CLOSED</h2>
+
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur obcaecati harum error possimus nihil perspiciatis ullam voluptatem pariatur aut earum!</p>
+
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, accusantium?</p>
+
+                    <div id="lowchar" class="artrefs"></div>
+
+                    <h3>Simple Low-Poly Character</h3>
+
+                    <div id="price-box">
+                        <ul>
+                            <li>Blender file : 30$</li>
+                            <li>Complex Details : add on depends</li>
+                            <li>Added Rig : + 10$</li>
+                            <li>Expression Rig : + 10$</li>
+                            <li>Character in Scene : 30$+ Scene Price Below</li>
+                        </ul>
+                    </div>
+
+                    <div id="3dscene" class="artrefs"></div>
+
+                    <h3>Background/Scene</h3>
+
+                    <div id="price-box">
+                        <ul>
+                            <li>Plain File : 30$~ (depends on size and complexity)</li>
+                            <li>Colors + Lighting : 50$~</li>
+                            <li>Complex Details/Animation : Depends</li>
+                        </ul>
+                    </div>
+
+                    <div id="simple3d" class="artrefs"></div>
+
+                    <h3>Simple Animation</h3>
+
+                    <div id="price-box">
+                        <ul>
+                            <li>Price depends on Commission, message for details</li>
+                        </ul>
+                    </div>
+
+                    <footer>
+                        <p>end of 3d commissions</p>
+                    </footer>
+                </section>
+
+                <section id="write-coms">
+                    <h2>WRITING COMMISSIONS</h2>
+                    <P class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum deleniti, similique animi quia labore eaque mollitia excepturi amet est itaque veritatis assumenda suscipit velit iusto recusandae repellat ea dolorum nisi aut ipsam, laudantium voluptatem! Optio rem porro ipsam dicta nam ex culpa, veritatis dolores, neque velit modi architecto. Aspernatur.</P>
+
+                    <ul>
+                        <li>oc</li>
+                        <li>oc</li>
+                        <li>oc</li>
+                        <li>oc</li>
+                    </ul>
+
+                    <div id="pricebox">
+
+                    </div>
+                    <footer>
+                        <p>end of writing commissions</p>
+                    </footer>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

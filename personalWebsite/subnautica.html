@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://iframe.chat/scripts/main.min.js"></script>
+
     <title>Subnautica | Shrine</title>
 
     <style>
         html{
-            scroll-behavior: smooth
+            scroll-behavior: smooth;
+            background: #ffffff89;
         }
         @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap');
@@ -234,6 +237,11 @@
             border: 10px solid rgba(255, 255, 255, 0.327);
             background-repeat: no-repeat;
         }
+        iframe{
+            width: 400px;
+            min-height: 400px;
+        }
+        
     </style>
 </head>
 <body>
@@ -251,6 +259,20 @@
             <div id="snapshots">
                 <h3>SNAPSHOTS</h3>
                 <img src="" class="snapshot">
+            </div>
+
+            <div id="comments">
+                <iframe src='https://iframe.chat/embed?chat=64978874' id='chattable' frameborder='none'></iframe>
+                <script>
+                    chattable.initialize({
+                        theme : "Comment Section"
+                    });
+                    chattable.initialize({
+                        stylesheet : "/personalWebsite/chattable.css"
+                    });
+                </script>
+
+
             </div>
         </section>
 
@@ -292,6 +314,8 @@
             <p><a href="shrines.html">go back</a> | <a href="https://store.steampowered.com/app/264710/Subnautica/">steam page</a> | <a href="https://en.wikipedia.org/wiki/Subnautica">wiki page</a></p>
         </div>
     </footer>
+
+    
 
 </body>
 </html>
